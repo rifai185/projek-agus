@@ -5,44 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Agus - Informatika UBL</title>
     <style>
+        /*  --- STYLE GALAXY --- */
         body {
-            font-family: Arial, sans-serif;
-            background: #0b0f2f;
-            color: white;
             margin: 0;
             padding: 0;
+            font-family: Poppins, Arial, sans-serif;
+            color: white;
             text-align: center;
+            background: url('https://i.imgur.com/9Z3j0Nn.jpeg') no-repeat center center/cover;
+            min-height: 100vh;
         }
-        .box {
-            max-width: 500px;
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(2px);
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
             margin: 60px auto;
-            background: rgba(255,255,255,0.05);
-            padding: 25px;
-            border-radius: 12px;
+            padding: 30px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
             border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 0 20px rgba(0,150,255,0.3);
         }
-        h1 { color: #4cc9f0; }
-        h2 { color: #90e0ef; margin-top: 20px; }
-        ul { list-style: none; padding: 0; line-height: 1.7; }
-    </style>
-</head>
-<body>
 
-    <h1>Profil Agus</h1>
-    <p>Mahasiswa Informatika - Universitas Bandar Lampung</p>
+        h1 {
+            font-size: 38px;
+            margin-bottom: 5px;
+            color: #4cc9f0;
+        }
 
-    <div class="box">
-        <h2>Data Diri</h2>
-        <ul>
-            <li><strong>Nama:</strong> Agus</li>
-            <li><strong>Prodi:</strong> Informatika</li>
-            <li><strong>Universitas:</strong> UBL</li>
-        </ul>
-
-        <h2>Tentang Saya</h2>
-        <p>Saya Agus, mahasiswa Informatika UBL yang menyukai teknologi, pemrograman, 
-        dan hal-hal baru yang menantang.</p>
-    </div>
-
-</body>
-</html>
+        h2 {
+            color: #90e0ef;
