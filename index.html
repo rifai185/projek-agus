@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Agus - Informatika UBL</title>
-    <style>
-        /*  --- STYLE GALAXY --- */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Poppins, Arial, sans-serif;
-            color: white;
-            text-align: center;
-            background: url('https://i.imgur.com/9Z3j0Nn.jpeg') no-repeat center center/cover;
-            min-height: 100vh;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Diri Agus</title>
+<style>
+    body{
+        margin:0;font-family:Arial;color:white;text-align:center;
+        background:url('https://i.imgur.com/9Z3j0Nn.jpeg') center/cover no-repeat fixed;
+    }
+    .box{
+        max-width:420px;margin:70px auto;padding:25px;
+        background:rgba(0,0,0,0.6);border-radius:12px;
+        border:1px solid rgba(255,255,255,0.2);
+    }
+    h1{color:#4cc9f0;margin-bottom:5px;}
+    h2{color:#90e0ef;margin:15px 0 10px;}
+    ul{list-style:none;padding:0;line-height:1.6;}
+    .astro{
+        width:120px;margin-bottom:10px;
+        animation:float 3s infinite ease-in-out;
+    }
+    @keyframes float{
+        0%{transform:translateY(0);}
+        50%{transform:translateY(-10px);}
+        100%{transform:translateY(0);}
+    }
+</style>
+</head>
+<body>
 
-        .overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.55);
-            backdrop-filter: blur(2px);
-        }
+<div class="box">
+    <img class="astro" src="https://i.imgur.com/jUMYqMc.png" alt="Astronot">
+    <h1>Data Diri Agus</h1>
 
-        .container {
-            position: relative;
-            z-index: 10;
-            max-width: 600px;
-            margin: 60px auto;
-            padding: 30px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.2);
-            box-shadow: 0 0 20px rgba(0,150,255,0.3);
-        }
+    <h2>Informasi</h2>
+    <ul>
+        <li><b>Nama:</b> Agus</li>
+        <li><b>Program Studi:</b> Informatika</li>
+        <li><b>Universitas:</b> Bandar Lampung</li>
+    </ul>
+</div>
 
-        h1 {
-            font-size: 38px;
-            margin-bottom: 5px;
-            color: #4cc9f0;
-        }
-
-        h2 {
-            color: #90e0ef;
+</body>
+</html>
